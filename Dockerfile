@@ -14,8 +14,8 @@ RUN yum-config-manager --add-repo http://packages.pivotal.io/pub/rpm/rhel7/app-s
 RUN yum install -y pivotal-tc-server-standard
 
 # add ojdbc6 and ojdbc7 to tomcat/lib directories
-ADD lib/ojdbc*.jar /tmp/
-RUN find /opt/pivotal/pivotal-tc-server-standard/tomcat-*.RELEASE -type d -name 'lib' -exec cp /tmp/ojdbc7*.jar {} \;
+# ADD lib/ojdbc*.jar /tmp/
+# RUN find /opt/pivotal/pivotal-tc-server-standard/tomcat-*.RELEASE -type d -name 'lib' -exec cp /tmp/ojdbc7*.jar {} \;
 
 
 

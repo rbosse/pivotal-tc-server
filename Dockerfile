@@ -36,9 +36,10 @@ ADD webapps/manager.war /web/tcserver/01/webapps
 
 
 # start the tcserver instance
-RUN /web/tcserver/01/bin/tcruntime-ctl.sh start /web/tcserver/01
+# RUN /web/tcserver/01/bin/tcruntime-ctl.sh start /web/tcserver/01
 
 
 # keep the container alive (PID=1)
-CMD tail -f /web/tcserver/01/logs/catalina.out
+# CMD tail -f /web/tcserver/01/logs/catalina.out
 #ENTRYPOINT tail -f /dev/null
+CMD [ "/web/tcserver/01/bin/tcruntime-ctl.sh", "start", "/web/tcserver/01" ]

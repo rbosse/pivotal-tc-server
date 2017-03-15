@@ -1,5 +1,7 @@
 # pivotal-tc-server
 
+This image is based on https://hub.docker.com/r/clotech/tcserver/~/dockerfile/
+
 ## How to run
 
 I'm currently not able to run the image directly.  But I can do this:

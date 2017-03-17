@@ -11,7 +11,7 @@ RUN rpm --import http://packages.gopivotal.com/pub/rpm/rhel7/app-suite/RPM-GPG-K
 RUN yum-config-manager --add-repo http://packages.pivotal.io/pub/rpm/rhel7/app-suite/x86_64
 
 # install tcserver
-RUN yum install -y pivotal-tc-server-standard
+RUN yum install -y pivotal-tc-server-standard-3.2.1-RELEASE
 
 # add ojdbc6 and ojdbc7 to tomcat/lib directories
 # ADD lib/ojdbc*.jar /tmp/
